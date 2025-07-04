@@ -1,0 +1,11 @@
+#container{border: 5px solid black;background-color: rgb(213, 227, 181); height: 500px; width:600px;
+display: flex;
+justify-content:center;}
+h1{text-align: center;}
+.box{height:150px; width: 150px; margin: 10px;border: 3px solid; border-radius:8px}
+#box_1{background-color: rgb(131, 131, 237);}
+#box_2{background-color: aqua}
+#box_3{background-color: blueviolet;}
+#box_4{background-color:salmon;}
+#box_5{background-color: darkseagreen; flex-shrink:10;}
+/* here, we learnt flex-shrink: "put the value whatever you want i.e "0" (it means no "shrink" compare to other boxs); "0.5" (it means box shrink half in compare to others); "2" (it means 2 times more shrink in compare of others); "1" ( it means equally shrink in compare to others) and  so on........ */

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{background-color: chartreuse;
+            height: 80px;
+            width: 80px;
+            border:5px solid gold;
+            border-radius: 5px;
+            position: absolute;
+            top:100px;
+            left:100px;
+             animation-name: FirstAnimation;
+            animation-duration:5s ;
+            animation-timing-function: ease-in-out;
+            animation-delay: 0s;
+            animation-iteration-count:infinite;
+            animation-direction:alternate;
+            /* animation: secondanimation 3s ease-in-out 0s 2 alternate; */
+            
+            /* this is short hand for animation */
+        }
+        
+       @keyframes FirstAnimation {
+        from {left:50px}
+        To {left:200px}
+       }
+
+       @keyframes secondanimation{
+        0% {left:50px}
+        50% {left:100px}
+        100% {left:200px}
+        /* here, "%" shows the percentage of duration of animation */
+       }
+    </style>
+</head>
+<body>
+    <div class="box">Animation</div>
+</body>
+</html>

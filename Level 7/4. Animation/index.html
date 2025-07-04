@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .progress_container{
+            width: 90%;
+            height: 20px;
+            border: 2px solid black;
+            background-color: aqua;
+            border-radius: 10px;
+        }
+
+    .progress_bar{
+        height: 95%;
+        position: relative;
+        top:0.5px;
+        background-color: black;
+        border-radius: 9px;
+        animation: progressbar 3s ease-in-out 0s 1 alternate;}
+        /* animation name: progressbar,
+            animation duration: 3s,
+            animation time function: ease-in-out,
+            animation dealy: 0s,
+            animation itration: 5 times,
+            animation direction: alternate */
+    
+    
+    @keyframes progressbar {
+        0%{width: 0%;}
+        90%{width: 95%;}
+        95%{width: 90%;}
+        100%{width: 100%;}
+        
+    }
+    </style>
+</head>
+<body>
+    <div class="progress_container">
+        <div class="progress_bar"></div>
+    </div>
+</body>
+</html>
